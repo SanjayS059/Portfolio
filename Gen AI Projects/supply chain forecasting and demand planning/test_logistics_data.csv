@@ -1,0 +1,51 @@
+Shipment_ID,SKU,Destination,Shipment_Time,Delay_Flag
+SH003,B101,Asia,3,False
+SH004,B101,Asia,3,False
+SH003,B101,Asia,3,True
+SH004,B101,Asia,3,False
+SH003,B101,Asia,7,True
+SH004,B101,Asia,4,False
+SH003,B101,Asia,4,True
+SH004,B101,Asia,4,False
+SH003,B101,Asia,5,False
+SH004,B101,Asia,7,False
+SH003,B101,Asia,3,False
+SH004,B101,Asia,3,False
+SH003,B101,Asia,7,False
+SH004,B101,Asia,7,False
+SH003,B101,Asia,3,True
+SH004,B101,Asia,3,True
+SH003,B101,Asia,7,True
+SH004,B101,Asia,3,False
+SH003,B101,Asia,5,True
+SH004,B101,Asia,3,False
+SH003,B101,Asia,3,True
+SH004,B101,Asia,3,False
+SH003,B101,Asia,3,False
+SH004,B101,Asia,7,True
+SH003,B101,Asia,4,True
+SH004,B102,South America,5,True
+SH003,B102,South America,3,False
+SH004,B102,South America,6,False
+SH003,B102,South America,5,True
+SH004,B102,South America,7,True
+SH003,B102,South America,6,True
+SH004,B102,South America,3,True
+SH003,B102,South America,5,False
+SH004,B102,South America,6,False
+SH003,B102,South America,7,False
+SH004,B102,South America,7,True
+SH003,B102,South America,3,True
+SH004,B102,South America,7,False
+SH003,B102,South America,3,True
+SH004,B102,South America,3,False
+SH003,B102,South America,7,True
+SH004,B102,South America,3,True
+SH003,B102,South America,5,False
+SH004,B102,South America,3,False
+SH003,B102,South America,7,True
+SH004,B102,South America,5,False
+SH003,B102,South America,3,True
+SH004,B102,South America,4,True
+SH003,B102,South America,4,True
+SH004,B102,South America,6,False

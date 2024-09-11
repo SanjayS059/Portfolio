@@ -1,0 +1,51 @@
+Shipment_ID,SKU,Destination,Shipment_Time,Delay_Flag
+SH001,A101,North America,4,True
+SH002,A101,North America,5,False
+SH001,A101,North America,7,True
+SH002,A101,North America,4,True
+SH001,A101,North America,8,True
+SH002,A101,North America,5,False
+SH001,A101,North America,8,True
+SH002,A101,North America,9,True
+SH001,A101,North America,8,True
+SH002,A101,North America,3,False
+SH001,A101,North America,5,False
+SH002,A101,North America,6,True
+SH001,A101,North America,7,False
+SH002,A101,North America,5,True
+SH001,A101,North America,7,True
+SH002,A101,North America,6,False
+SH001,A101,North America,6,False
+SH002,A101,North America,7,False
+SH001,A101,North America,9,True
+SH002,A101,North America,6,False
+SH001,A101,North America,4,False
+SH002,A101,North America,9,False
+SH001,A101,North America,9,True
+SH002,A101,North America,6,False
+SH001,A101,North America,9,True
+SH002,A102,Europe,8,True
+SH001,A102,Europe,3,False
+SH002,A102,Europe,4,False
+SH001,A102,Europe,6,False
+SH002,A102,Europe,6,False
+SH001,A102,Europe,4,True
+SH002,A102,Europe,5,True
+SH001,A102,Europe,7,False
+SH002,A102,Europe,7,False
+SH001,A102,Europe,8,False
+SH002,A102,Europe,7,True
+SH001,A102,Europe,9,True
+SH002,A102,Europe,3,True
+SH001,A102,Europe,5,False
+SH002,A102,Europe,4,True
+SH001,A102,Europe,4,True
+SH002,A102,Europe,4,False
+SH001,A102,Europe,5,True
+SH002,A102,Europe,9,True
+SH001,A102,Europe,5,False
+SH002,A102,Europe,3,True
+SH001,A102,Europe,9,False
+SH002,A102,Europe,5,False
+SH001,A102,Europe,7,True
+SH002,A102,Europe,9,True
