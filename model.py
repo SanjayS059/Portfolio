@@ -41,8 +41,7 @@ def provision_sap_role(MSKEYVALUE, MXREF_MX_ROLE):
         "validTo": "2024-12-31"
     }
     response = requests.post(url, json=payload)
-    
-    # Check the API response
+
     if response.status_code == 200:
         return f"Role '{MXREF_MX_ROLE}' successfully assigned to user '{MSKEYVALUE}'!"
     else:
