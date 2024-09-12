@@ -29,21 +29,21 @@ def recommend_sap_role(input_description, vectorizer, tfidf_matrix, mskeys, sap_
     best_match_index = cosine_similarities.argmax()
     return mskeys[best_match_index], sap_roles[best_match_index], descriptions[best_match_index]
 
-def provision_sap_role(MSKEYVALUE, MXREF_MX_ROLE):
+def provision_sap_role(MSKEYVALUE, sap_role):
 
     url = f"https://emnov08:init1234@https://sapidm.mydomain.com:50001/idmrestapi/v2/service/ET_MX_PERSON(ID=25475,TASK_GUID=guid'65EF6F8B-E0E3-4E11-B092-C82BC6F57376"
     
     # Create the payload with user ID and role
     payload = {
         "MSKEYVALUE": MSKEYVALUE,
-        "MXREF_MX_ROLE": MXREF_MX_ROLE,
+        "MXREF_MX_ROLE": sap_role,
         "validFrom": "2024-01-01",
         "validTo": "2024-12-31"
     }
     response = requests.post(url, json=payload)
 
     if response.status_code == 200:
-        return f"Role '{MXREF_MX_ROLE}' successfully assigned to user '{MSKEYVALUE}'!"
+        return f"Role '{sap_role}' successfully assigned to user '{MSKEYVALUE}'!"
     else:
         return f"Failed to assign role. Error {response.status_code}: {response.text}"
 
