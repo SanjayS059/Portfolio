@@ -36,7 +36,7 @@ def provision_sap_role(MSKEYVALUE, sap_role):
     # Create the payload with user ID and role
     payload = {
         "MSKEYVALUE": MSKEYVALUE,
-        "MXREF_MX_ROLE": sap_role,
+        "MXREF_MX_ROLE": mskey,
         "validFrom": "2024-01-01",
         "validTo": "2024-12-31"
     }
