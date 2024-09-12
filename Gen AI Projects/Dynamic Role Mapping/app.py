@@ -1,3 +1,5 @@
+pip install --upgrade pip
+pip install streamlit
 import streamlit as st
 from model import role_mapping_df,vectorize_role_descriptions, recommend_sap_role
 
