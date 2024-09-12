@@ -3,7 +3,7 @@ import requests
 from model import role_mapping_df,vectorize_role_descriptions, recommend_sap_role
 
 def provision_sap_role(user_id, sap_role):
-    url = f"emnov08:init1234@https://sapidm.mydomain.com:50001/idmrestapi/v2/service/ET_MX_PERSON(ID=25475,TASK_GUID=guid'65EF6F8B-E0E3-4E11-B092-C82BC6F57376" 
+    url = f"https://emnov08:init1234@https://sapidm.mydomain.com:50001/idmrestapi/v2/service/ET_MX_PERSON(ID=25475,TASK_GUID=guid'65EF6F8B-E0E3-4E11-B092-C82BC6F57376" 
     payload = {
         "userId": user_id,
         "role": sap_role,
