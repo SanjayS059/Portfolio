@@ -1,9 +1,3 @@
-from google.colab import files
-files.download('/content/drive/MyDrive/Colab Notebooks/model.py')
-
-!ls
-
-
 import streamlit as st
 from model import role_mapping_df,vectorize_role_descriptions, recommend_sap_role
 
