@@ -26,7 +26,7 @@ vectorizer, tfidf_matrix = vectorize_role_descriptions(role_descriptions)
 
 st.title("AI-Powered SAP Role Recommendation System")
 role_description_input = st.text_area("Enter a role description:")
-MSKEYVALUE = st.text_input("Enter the user ID:")
+user_id_input = st.text_input("Enter the user ID:")
 if st.button("Generate Role"):
     mskey, sap_role, display_name = recommend_sap_role(role_description_input, vectorizer, tfidf_matrix, mskeys, sap_roles, role_descriptions)
     st.write(f"Recommended SAP Role: {sap_role}")
