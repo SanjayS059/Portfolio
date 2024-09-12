@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def load_role_mapping_data():
 
-    file_path = '/content/Book1(Sheet1).csv'
+    file_path = 'Gen AI Projects/Dynamic Role Mapping/Book1(Sheet1).csv'
     role_mapping_df = pd.read_csv(file_path)
     return role_mapping_df
 
