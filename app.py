@@ -18,7 +18,7 @@ if st.button("Generate Role"):
     st.write(f"Role MSKEY: {mskey}")
     
 if st.button("Provision Role"):
-    if MSKEYVALUE and sap_roles :
+    if MSKEYVALUE.any() and sap_roles.any() :
         provision_result = provision_sap_role(MSKEYVALUE, sap_roles)
         st.write(provision_result)
     else:
