@@ -40,7 +40,7 @@ def provision_sap_role(MSKEYVALUE, sap_roles):
         "validFrom": "2024-01-01",
         "validTo": "2024-12-31"
     }
-    response = requests.post(url, json=payload)
+    
 
     if response.status_code == 200:
         return f"Role '{sap_roles}' successfully assigned to user '{MSKEYVALUE}'!"
