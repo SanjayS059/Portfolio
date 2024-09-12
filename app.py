@@ -18,8 +18,7 @@ if st.button("Generate Role"):
     st.write(f"Role MSKEY: {mskey}")
     
 if st.button("Provision Role"):
-    if MSKEYVALUE and MXREF_MX_ROLE:
-        # Provision the role to the user using the SAP IDM REST API with basic authentication
+    if MSKEYVALUE and MXREF_MX_ROLE :
         provision_result = provision_sap_role(MSKEYVALUE, MXREF_MX_ROLE)
         st.write(provision_result)
     else:
