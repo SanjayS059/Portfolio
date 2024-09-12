@@ -40,14 +40,7 @@ def provision_sap_role(MSKEYVALUE, MXREF_MX_ROLE):
         "validFrom": "2024-01-01",
         "validTo": "2024-12-31"
     }
-    
-    # Include authentication headers (can be empty if credentials are passed in URL)
-    headers = {
-        "Content-Type": "application/json"
-    }
-    
-    # Make the API request
-    response = requests.post(url, json=payload, headers=headers)
+    response = requests.post(url, json=payload)
     
     # Check the API response
     if response.status_code == 200:
