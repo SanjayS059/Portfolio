@@ -29,6 +29,11 @@ role_description_input = st.text_area("Enter a role description:")
 user_id_input = st.text_input("Enter the user ID:")
 if st.button("Generate Role"):
     mskey, sap_role, display_name = recommend_sap_role(role_description_input, vectorizer, tfidf_matrix, mskeys, sap_roles, role_descriptions)
+
+    st.session_state['sap_role'] = sap_role
+    st.session_state['mskey'] = mskey
+    st.session_state['display_name'] = display_name
+    
     st.write(f"Recommended SAP Role: {sap_role}")
     st.write(f"Role Display Name: {display_name}")
     st.write(f"Role MSKEY: {mskey}")
