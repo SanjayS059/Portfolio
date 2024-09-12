@@ -1,12 +1,10 @@
-pip install streamlit
-
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def load_role_mapping_data():
 
-    file_path = '/content/Book1(Sheet1).csv'
+    file_path = 'Book1(Sheet1).csv'
     role_mapping_df = pd.read_csv(file_path)
     return role_mapping_df
 
