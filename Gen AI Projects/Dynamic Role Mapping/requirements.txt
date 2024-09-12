@@ -1,1 +1,2 @@
-streamlit
+Python 3.10.12
+streamlit==1.38.0
