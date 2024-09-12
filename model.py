@@ -41,9 +41,3 @@ def provision_sap_role(MSKEYVALUE, sap_roles):
         "validTo": "2024-12-31"
     }
     
-
-    if response.status_code == 200:
-        return f"Role '{sap_roles}' successfully assigned to user '{MSKEYVALUE}'!"
-    else:
-        return f"Failed to assign role. Error {response.status_code}: {response.text}"
-
