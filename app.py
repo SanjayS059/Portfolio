@@ -37,8 +37,10 @@ if st.button("Generate Role"):
     st.write(f"Recommended SAP Role: {sap_role}")
     st.write(f"Role Display Name: {display_name}")
     st.write(f"Role MSKEY: {mskey}")
-    
+else:
+    st.write("Please enter a valid role description.")   
 if st.button("Provision Role"):
+    sap_role = st.session_state.get('sap_role', None)
     if user_id_input and sap_role:
         provision_result = provision_sap_role(user_id_input, sap_role)
         st.write(provision_result)
