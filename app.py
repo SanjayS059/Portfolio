@@ -19,7 +19,7 @@ if st.button("Generate Role"):
     
 if st.button("Provision Role"):
     if MSKEYVALUE and sap_role :
-        provision_result = provision_sap_role(MSKEYVALUE, sap_role)
+        provision_result = provision_sap_role(MSKEYVALUE, mskey)
         st.write(provision_result)
     else:
         st.write("Please provide all required information (role description, MSKEYVALUE).")
